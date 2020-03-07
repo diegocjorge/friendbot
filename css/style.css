@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3aafa9;
+    font-family: 'Anton', Impact, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    font-size: 4.5em;
+    text-align: center;
+    color: #feffff;
+    text-shadow: 2px 1px black;
+    font-family: 'Righteous', Impact, sans-serif;
+    padding: 0px 30px;
+    background: url(robo.svg) right top no-repeat, url(robo2.svg) left bottom no-repeat;
+    background-size: contain;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #2b7a78;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+nav a {
+    float: left;
+    display: block;
+    color: #def2f1;
+    text-shadow: 2px 1px black;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #17252a;
+    color: #feffff;
+}
+
+article {
+    text-align: justify;
+    color: #17252a;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    text-shadow: 2px 1px black;
+    color: #def2f1;
+    margin: auto;
+    background-color: #3aafa9;
+}
+footer a {
+    color: #def2f1;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+}
