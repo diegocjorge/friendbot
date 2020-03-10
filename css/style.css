@@ -9,7 +9,7 @@ body {
     margin: auto;
 }
 
-header{
+header {
     font-size: 4.5em;
     text-align: center;
     color: #feffff;
@@ -18,28 +18,6 @@ header{
     padding: 0px 30px;
     background: url(robo.svg) right top no-repeat, url(robo2.svg) left bottom no-repeat;
     background-size: contain;
-}
-
-nav {
-    overflow: hidden;
-    background-color: #2b7a78;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
-nav a {
-    float: left;
-    display: block;
-    color: #def2f1;
-    text-shadow: 2px 1px black;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 16px 20px;
-    text-decoration: none;
-}
-nav a:hover {
-    background-color: #17252a;
-    color: #feffff;
 }
 
 article {
@@ -54,16 +32,138 @@ footer {
     text-shadow: 2px 1px black;
     color: #def2f1;
     margin: auto;
+    clear: both;
     background-color: #3aafa9;
 }
+
 footer a {
     color: #def2f1;
     text-decoration: none;
 }
+
 footer a:hover {
     color: white;
 }
 
+/* Formatação do Menu */
+
+nav {
+    overflow: hidden;
+    background-color: #2b7a78;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #def2f1;
+    text-shadow: 2px 1px black;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #17252a;
+    color: #feffff;
+}
+
 .ativo {
     background-color: #17252a;
+}
+
+/* Formatação Texto */
+
+h1 {
+    text-align: left;
+    color: #def2f1;
+    text-shadow: 2px 1px black;
+}
+
+a {
+    color: #17252a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Formatação da Tabela */
+
+table {
+    width: 50%;
+}
+
+th {
+    border: 1px solid #def2f1;
+    text-align: center;
+    padding: 8px;
+    background-color: #17252a;
+    color: #def2f1;
+    text-shadow: 2px 1px black;
+    font-style: normal;
+    font-size: 1.25em;
+}
+
+td {
+    border: 1px solid #def2f1;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #def2f1;
+}
+
+/* Formatação do Formulário */
+
+label {
+    padding: 12px 12px 12px 0;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+input[type=text], input[type=number], input[type=tel], input[type=email], select, textarea {
+    padding: 7px;
+    resize: vertical;
+    width: 100%;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #2b7a78;
+    color: #def2f1;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #17252a;
+}
+
+.form_texto {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.form_caixa {
+    float: left;
+    width: 65%;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.form_linha:after {
+    content: "";
+    display: table;
+    clear: both;
 }
