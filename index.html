@@ -1,102 +1,53 @@
-<!--
-Página Principal (dashboard) => A home do website.
-Página interna 1 => Exemplo de aplicação de robô.
-Página interna 2 => Exemplo de aplicação de robô.
-Página interna 3 => Formulário.
-Página interna 4 => Feedback de envio do formulário.
-
-• Pesquise por aplicações de robôs nacionais e internacionais (você pode
-aproveitar a pesquisa realizada no Capítulo 1, se já tiver mencionado
-robôs);
-
-• Cuide da navegação. A página do dashboard deve possuir um menu com
-links para as outras páginas. O menu pode ficar visível nas outras páginas,
-se achar mais adequado para a navegação (mas ele começa ali!);
-
-• Lembre dos atributos de tags que ajudam na acessibilidade para pessoas
-com deficiência visual;
-
-• Utilize uma tabela para apresentar alguns dados pesquisados;
-
-• O formulário para adicionar/cadastrar informações deve direcionar para a
-página interna de feedback de envio (por enquanto não se cadastra nada,
-de fato). É uma simulação de envio dos dados para termos uma ideia de
-como as páginas vão ficar.
-
-• Criar um layout atraente, utilizando fotos, imagens, ícones. (mas use o
-bom senso!) O foco é o uso do HTML, já o CSS e alguns frameworks
-serão utilizados e avaliados em uma outra atividade. Não precise se
-preocupar com isso agora, mas caso queira usar não haverá prejuízo na
-nota.
-
-• Padrões são importantes. O website deve possuir uma identidade visual
-única (padrões de textos, bordas, tabelas, etc). O usuário deve perceber o
-pertencimento entre as páginas, como sendo de um mesmo website. Ex.:
-menu no mesmo lugar, títulos e banner etc., mas o uso de templates ou
-frameworks não é permitido nesta atividade. O objetivo é que você se
-familiarize com as tags HTML, por isso todo código deve ser escrito por
-você.
-
-• A parte ilustrativa dos exemplos deve ser com imagem, pois o website
-precisa estar completo no que se refere a conteúdos essenciais,
-independente da internet estar disponível. No entanto, caso queira indicar
-um vídeo como sendo complementar, é preciso direcionar o usuário para
-um link externo (URL completa).
-
-• Inclua os créditos no website, pois além de ser um trabalho acadêmico, é
-importante o nome do desenvolvedor e o ano de desenvolvimento para
-informações de uso posterior. Você pode testá-lo diretamente no
-navegador, dando um duplo clique no arquivo da página principal.
--->
-
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Projeto Friendbot</title>
-    <link type="image/x-icon" href="img/icon.svg" rel="icon">
-    <link type="text/css" href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Righteous|Anton&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="keywords" content="fiap, friendbot, diego cuman jorge">
-  </head>
 
-  <body>
-    <header>
-      <p>
-        Robôs na Recreação Infantil
-      </p>
-    </header>
+<head>
+  <title>Projeto Friendbot</title>
+  <link type="image/x-icon" href="img/icon.svg" rel="icon">
+  <link type="text/css" href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Anton&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="keywords" content="fiap, friendbot, diego cuman jorge">
+</head>
 
-    <nav>
-      <a class="ativo" href="index.html"><img src="img/home.svg" alt="Home" style="width: 22px; height: 22px;"></a>
-      <a href="exemplo1.html">KIWI</a>
-      <a href="exemplo2.html">CODIE</a>
-      <a href="form.html" style="float:right">ENVIE UMA SUGESTÃO</a>
-    </nav>
+<body>
+  <header>
+    <p>
+      Robôs na Recreação Infantil
+    </p>
+  </header>
 
-    <article style="font-size: 1.5em;">
-      <img src="img/mao.svg" alt="Mão robótica" style="float: right; padding-top: 50px;" height="20%" width="20%">
-      <p>
-        Neste site você vai descubrir como robôs estão sendo usados para ensinar novas habilidades ao mesmo tempo que entretem as crianças. São dois
-        robôs que você pode conferir:
-      </p>
-      <p>
-        ● KIWI: um robô que ajuda crianças com autismo a se socializarem.
-      </p>
-      <p>
-        ● CODIE: um divertido robô com a missão de ensinar programação para crianças de 8 a 12 anos.
-      </p>
-      <p>
-        Depois não se esqueça de deixar uma sugestão!
-      </p>
-    </article>
+  <nav>
+    <a class="ativo" href="index.html"><img src="img/home.svg" alt="Home" height="22px" width="22px"></a>
+    <a href="exemplo1.html">KIWI</a>
+    <a href="exemplo2.html">CODIE</a>
+    <a href="form.html" style="float:right">ENVIE UMA SUGESTÃO</a>
+  </nav>
 
-    <footer>
-      <p>
-        Desenvolvedor:<br>
-        <a href="https://linkedin.com/in/diego-cuman-jorge-ab597126">Diego Cuman Jorge</a><br>
-        2020
-      </p>
-    </footer>
-  </body>
+  <article style="font-size: 1.5em;">
+    <img src="img/mao.svg" alt="Mão robótica" style="float: right; padding-top: 50px;" height="20%" width="20%">
+    <p>
+      Neste site você vai descobrir como robôs estão sendo usados para ensinar novas habilidades enquanto divertem as
+      crianças. São dois robôs que você pode conferir:
+    </p>
+    <p>
+      ● KIWI: um robô que ajuda crianças com autismo a se socializarem.
+    </p>
+    <p>
+      ● CODIE: um divertido robô com a missão de ensinar programação para crianças de 8 a 12 anos.
+    </p>
+    <p>
+      Depois não se esqueça de deixar uma sugestão!
+    </p>
+  </article>
+
+  <footer>
+    <p>
+      Desenvolvedor:<br>
+      <a href="https://linkedin.com/in/diego-cuman-jorge-ab597126">Diego Cuman Jorge</a><br>
+      2020
+    </p>
+  </footer>
+</body>
+
 </html>

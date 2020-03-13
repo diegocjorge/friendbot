@@ -1,129 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Projeto Friendbot</title>
-    <link type="image/x-icon" href="img/icon.svg" rel="icon">
-    <link type="text/css" href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Righteous|Anton&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="keywords" content="fiap, friendbot, diego cuman jorge">
-  </head>
 
-  <body>
-    <header>
-      <p>
-        Robôs na Recreação Infantil
-      </p>
-    </header>
+<head>
+  <title>Projeto Friendbot</title>
+  <link type="image/x-icon" href="img/icon.svg" rel="icon">
+  <link type="text/css" href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Anton&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="keywords" content="fiap, friendbot, diego cuman jorge">
+</head>
 
-    <nav>
-      <a href="index.html"><img src="img/home.svg" alt="Home" style="width: 22px; height: 22px;"></a>
-      <a href="exemplo1.html">KIWI</a>
-      <a href="exemplo2.html">CODIE</a>
-      <a class="ativo" href="form.html" style="float:right">ENVIE UMA SUGESTÃO</a>
-    </nav>
+<body>
+  <header>
+    <p>
+      Robôs na Recreação Infantil
+    </p>
+  </header>
 
-    <div>
-      <h1 style="text-align: center;">
-        Envie uma sugestão
-      </h1>
-      <p style="text-align: center; font-size: 1.3em;">
-        Para enviar sua sugestão, preencha o formulário:
-      </p>
+  <nav>
+    <a href="index.html"><img src="img/home.svg" alt="Home" height="22px" width="22px"></a>
+    <a href="exemplo1.html">KIWI</a>
+    <a href="exemplo2.html">CODIE</a>
+    <a class="ativo" href="form.html" style="float:right">ENVIE UMA SUGESTÃO</a>
+  </nav>
+
+  <div>
+    <h1 style="text-align: center;">
+      Envie uma sugestão
+    </h1>
+    <p style="text-align: center; font-size: 1.3em;">
+      Para enviar sua sugestão, preencha o formulário:
+    </p>
+  </div>
+
+  <form id="formulario" method="POST" action="form_ok.html">
+    <div class="form_linha">
+      <div class="form_texto">
+        <label for="nome">Nome Completo </label>
+      </div>
+      <div class="form_caixa">
+        <input id="nome" type="text" autofocus placeholder="Digite seu nome..." required minlength="5">
+      </div>
     </div>
+    <div class="form_linha">
+      <div class="form_texto">
+        <label for="idade">Idade </label>
+      </div>
+      <div class="form_caixa">
+        <input id="idade" type="number" style="width: fit-content;">
+      </div>
+    </div>
+    <div class="form_linha">
+      <div class="form_texto">
+        <label for="sexo">Sexo </label>
+      </div>
+      <div class="form_caixa">
+        <input id="sexo" type="radio" value="Masculino"> Masculino
+        <input id="sexo" type="radio" value="Feminino"> Feminino
+        <input id="sexo" type="radio" value="Outro"> Outro
+      </div>
+    </div>
+    <div class="form_linha">
+      <div class="form_texto">
+        <label for="email">E-mail </label>
+      </div>
+      <div class="form_caixa">
+        <input id="email" type="email" required maxlength="40" placeholder="Digite um e-mail válido...">
+      </div>
+    </div>
+    <div class="form_linha">
+      <div class="form_texto">
+        <label for="estado">Estado </label>
+      </div>
+      <div class="form_caixa">
+        <select id="estado" name="estado">
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP" selected>São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+          <option value="EX">Estrangeiro</option>
+        </select>
+      </div>
+    </div>
+    <div class="form_linha">
+      <div class="form_texto">
+        <label for="sugestao">Sugestão </label>
+      </div>
+      <div class="form_caixa">
+        <textarea id="sugestao" placeholder="Digite aqui sua sugestão..." height="150px" required></textarea>
+      </div>
+    </div>
+    <div style="margin: auto; width: max-content; padding: 10px;">
+      <input type="reset" value="APAGAR">
+      <input type="submit" value="ENVIAR">
+    </div>
+  </form>
 
-    <form id="formulario" method="POST" action="form_ok.html">
-      <div class="form_linha">
-        <div class="form_texto">
-          <label for="nome">Nome Completo </label>
-        </div>
-        <div class="form_caixa">
-          <input id="nome" type="text" autofocus placeholder="Digite seu nome..." required minlength="5">
-        </div>
-      </div>
-      <div class="form_linha">
-        <div class="form_texto">
-          <label for="idade">Idade </label>
-        </div>
-        <div class="form_caixa">
-          <input id="idade" type="number" style="width: fit-content;">
-        </div>
-      </div>
-      <div class="form_linha">
-        <div class="form_texto">
-          <label for="sexo">Sexo </label>
-        </div>
-        <div class="form_caixa">
-          <input id="sexo" type="radio" value="Masculino"> Masculino 
-          <input id="sexo" type="radio" value="Feminino"> Feminino
-          <input id="sexo" type="radio" value="Outro"> Outro
-        </div>
-      </div>
-      <div class="form_linha">
-        <div class="form_texto">
-          <label for="email">E-mail </label>
-        </div>
-        <div class="form_caixa">
-          <input id="email" type="email" required maxlength="40" placeholder="Digite um e-mail válido...">
-        </div>
-      </div>
-      <div class="form_linha">
-        <div class="form_texto">
-          <label for="estado">Estado </label>
-        </div>
-        <div class="form_caixa">
-          <select id="estado" name="estado">
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP" selected>São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-            <option value="EX">Estrangeiro</option>
-          </select>
-        </div>
-      </div>
-      <div class="form_linha">
-        <div class="form_texto">
-          <label for="sugestao">Sugestão </label>
-        </div>
-        <div class="form_caixa">
-          <textarea id="sugestao" placeholder="Digite aqui sua sugestão..." style="height: 150px;" required></textarea>
-        </div>
-      </div>
-      <div style="margin: auto; width: max-content; padding: 10px;">
-        <input type="reset" value="APAGAR">
-        <input type="submit" value="ENVIAR">
-      </div>
-    </form>
+  <footer>
+    <p>
+      Desenvolvedor:<br>
+      <a href="https://linkedin.com/in/diego-cuman-jorge-ab597126">Diego Cuman Jorge</a><br>
+      2020
+    </p>
+  </footer>
+</body>
 
-    <footer>
-      <p>
-        Desenvolvedor:<br>
-        <a href="https://linkedin.com/in/diego-cuman-jorge-ab597126">Diego Cuman Jorge</a><br>
-        2020
-      </p>
-    </footer>
-  </body>
 </html>
