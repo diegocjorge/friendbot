@@ -10,7 +10,7 @@ body {
 }
 
 header {
-	background: url(robo.svg) right top no-repeat, url(robo2.svg) left bottom no-repeat;
+	background: url(img/robo.svg) right top no-repeat, url(img/robo2.svg) left bottom no-repeat;
 	background-size: contain;
 	color: #feffff;
 	font-family: "Righteous", Impact, sans-serif;
