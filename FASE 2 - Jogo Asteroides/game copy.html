@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Jogo Asteroides</title>
+		<style>
+			canvas {
+				border: #f00 solid 1px;
+				background-image: url("imagens/fundo.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="400">Seu navegador não pode exibir este elemento. Seu navegador não presta, use outro.</canvas>
+		<script>
+
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var nave = new objeto(50, 180, 40, 40, 5, "aster");
+
+// DETECTAR COLISÃO
+// requestAnimationFrame(gameloop);
+// function detectarColisao() {
+// 	if (
+// 		x_nave + w_nave > x_meteo &&
+// 		x_nave < x_meteo + w_meteo &&
+// 		y_nave + h_nave > y_meteo &&
+// 		y_nave < y_meteo + h_meteo
+// 	) {
+// 		clearTimeout();
+// 	} else if (
+// 		x_nave + w_nave > x_aster &&
+// 		x_nave < x_aster + w_aster &&
+// 		y_nave + h_nave > y_aster &&
+// 		y_nave < y_aster + h_aster
+// 	) {
+// 		clearTimeout();
+// 	} else {
+// 		requestAnimationFrame(gameloop);
+// 	}
+// }
+
+nave.desenhar();
+
+// GAMELOOP
+// requestAnimationFrame(gameloop);
+
+// function gameloop() {
+// 	nave.desenhar();
+// }
+
+// DESENHAR OBJETO
+
+function objeto(x, y, w, h, s, tipo) {
+	this.x = x;
+	this.y = y;
+	this.w = w;
+	this.h = h;
+	this.s = s;
+	this.tipo = tipo; // Tipos: nave, aster, meteo
+	if (tipo == "nave") {
+		this.dir_img = {
+			c: "imagens/cNave.png",
+			d: "imagens/dNave.png",
+			b: "imagens/bNave.png",
+			e: "imagens/eNave.png",
+		};
+		this.dir_nave = this.dir_img.d; // COLOCAR FUNÇÃO PARA TROCAR DIR
+		this.img = new Image();
+		this.img.src = this.dir_nave;
+	} else if (tipo == "aster") {
+		this.img = document.createElement("imagem");
+		this.img = new Image(this.w, this.h);
+		this.img.src = "imagens/asteroide.png";
+	} else if (tipo == "meteo") {
+
+	} else {
+		console.log = "Erro! Objeto não existente.";
+	}
+	this.desenhar = function () {
+		ctx = canvas.getContext("2d");
+		this.img.onload = function () {
+			ctx.drawImage(this.img, this.x, this.y);
+		};
+	};
+}
+
+
+		</script>
+	</body>
+</html>
