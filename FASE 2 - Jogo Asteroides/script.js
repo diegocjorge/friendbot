@@ -112,7 +112,7 @@ function objeto(x, y, tamanho, velocidade, tipo) {
 	this.tipo = tipo; // Tipos: nave, aster, meteo
 	if (tipo == "nave") {
 		this.img = new Image();
-		this.img.src = midia.direita; //MUDAR
+		this.img.src = midia.direita;
 	} else if (tipo == "aster") {
 		this.img = new Image();
 		this.img.src = "imagens/asteroide.png";
