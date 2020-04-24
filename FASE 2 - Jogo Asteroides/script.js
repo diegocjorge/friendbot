@@ -4,10 +4,10 @@ var gameover = false;
 var placar = 0;
 var tempo = 0;
 var penalidade = 0;
-var tempo_penalidade = 3 * 50;
+var tempo_penalidade = 2 * 50;
 var dificuldade = 1;
 
-// CARREGAR TODAS AS IMAGENS E SONS
+// CARREGAR TODAS AS IMAGENS
 var midia = {
 	esquerda: "imagens/e_nave.png",
 	cima: "imagens/c_nave.png",
@@ -73,14 +73,13 @@ window.onkeydown = function comando(tecla) {
 				penalidade = 0;
 			}
 			break;
+		case 10:
 		case 13:
 			gameover = true;
 			console.log("Jogo interrompido");
 			break;
 	}
 };
-
-// FUNÇÃO DE COLISÃO
 
 // GAMELOOP
 function gameloop() {
@@ -89,9 +88,14 @@ function gameloop() {
 	ctx.clearRect(0, 0, 800, 400);
 	desenhar_objetos();
 	checar_colisoes();
+	mostrar_placar();
 	if (gameover == true) {
-		clearTimeout(); /////// TELA DE GAMEOVER
-		console.log("Game Over!");
+		clearTimeout();
+		ctx.font = "150px Arial";
+		ctx.textBaseline = "middle";
+		ctx.fillStyle = "Red";
+		ctx.fillText("Game Over", 10, 200);
+		console.log("Game Over");
 	} else {
 		tempo++;
 		penalidade++;
@@ -145,7 +149,13 @@ function objeto(x, y, tamanho, velocidade, tipo) {
 	};
 }
 
-//PLACAR, PENALIDADES E AUMENTO DA DIFICULDADE
+// PLACAR, PENALIDADES E AUMENTO DA DIFICULDADE
+function mostrar_placar() {
+	ctx.font = "20px Arial";
+	ctx.textBaseline = "top";
+	ctx.fillStyle = "Red";
+	ctx.fillText("Pontos: " + placar, 5, 370);
+}
 function calculos() {
 	if (penalidade >= tempo_penalidade) {
 		placar -= 10;
@@ -154,7 +164,7 @@ function calculos() {
 			placar = 0;
 		}
 	}
-	//REALIZADO A CADA SEGUNDO
+	// Realizado a cada segundo
 	if (tempo >= 50) {
 		tempo = 0;
 		dificuldade++;
