@@ -1,0 +1,7 @@
+[lang|=en] {
+    font-style: italic;
+}
+
+img[title~=kiwi] {
+    border: 3px solid hsla(200, 100%, 50%, 10%);
+}
