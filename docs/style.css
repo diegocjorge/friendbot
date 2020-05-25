@@ -1,0 +1,168 @@
+body {
+	box-sizing: border-box;
+	background-color: #3aafa9;
+	font-family: "Anton", Impact, sans-serif;
+	margin: auto;
+	max-width: 1200px;
+}
+
+header {
+	background: url(img/robo.svg) right no-repeat, url(img/robo2.svg) left no-repeat;
+	background-size: contain;
+	color: #feffff;
+	font-family: "Righteous", Impact, sans-serif;
+	font-size: 4.5em;
+	padding: 0px 30px;
+	text-align: center;
+	text-shadow: 2px 1px black;
+}
+
+article {
+	color: #17252a;
+	font-size: 1.2em;
+	padding: 20px;
+	text-align: justify;
+}
+
+footer {
+	background-color: #3aafa9;
+	clear: both;
+	color: #def2f1;
+	margin: auto;
+	text-align: center;
+	text-shadow: 2px 1px black;
+}
+
+footer a {
+	color: #def2f1;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: white;
+}
+
+/* Formatação do Menu */
+nav {
+	background-color: #2b7a78;
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+}
+
+nav a {
+	color: #def2f1;
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	padding: 16px 20px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 2px 1px black;
+}
+
+nav a:hover {
+	background-color: #17252a;
+	color: #feffff;
+}
+
+.ativo {
+	background-color: #17252a;
+}
+
+/* Formatação Texto */
+h1 {
+	color: #def2f1;
+	text-align: left;
+	text-shadow: 2px 1px black;
+}
+
+a {
+	color: #17252a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+/* Formatação da Tabela */
+table {
+	width: 50%;
+}
+
+th {
+	background-color: #17252a;
+	border: 1px solid #def2f1;
+	color: #def2f1;
+	font-size: 1.25em;
+	font-style: normal;
+	padding: 8px;
+	text-align: center;
+	text-shadow: 2px 1px black;
+}
+
+td {
+	border: 1px solid #def2f1;
+	padding: 8px;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #def2f1;
+}
+
+/* Formatação do Formulário */
+label {
+	font-size: 1.3em;
+	padding: 12px 12px 12px 0;
+	text-align: right;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+select,
+textarea {
+	padding: 7px;
+	resize: vertical;
+	width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	background-color: #2b7a78;
+	border: none;
+	color: #def2f1;
+	cursor: pointer;
+	padding: 12px 20px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	background-color: #17252a;
+}
+
+.form_texto {
+	float: left;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	text-align: right;
+	vertical-align: middle;
+	width: 25%;
+}
+
+.form_caixa {
+	float: left;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	vertical-align: middle;
+	width: 65%;
+}
+
+.form_linha:after {
+	clear: both;
+	content: "";
+	display: table;
+}
