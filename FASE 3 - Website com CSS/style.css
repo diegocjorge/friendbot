@@ -45,6 +45,7 @@ footer a:hover {
 /* Formatação do Menu */
 nav {
 	background-color: #2b7a78;
+	font-size: 1.2em;
 	overflow: hidden;
 	position: sticky;
 	top: 0;
@@ -54,7 +55,7 @@ nav a {
 	color: #def2f1;
 	display: block;
 	float: left;
-	font-size: 1.2em;
+	/* font-size: 1.2em; */
 	padding: 16px 20px;
 	text-align: center;
 	text-decoration: none;
