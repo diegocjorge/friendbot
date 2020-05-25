@@ -1,3 +1,15 @@
+/* @media screen and (min-width: 601px) {
+	* {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	* {
+		font-size: 1.5em;
+	}
+} */
+
 body {
 	box-sizing: border-box;
 	background-color: #3aafa9;
@@ -17,9 +29,36 @@ header {
 	text-shadow: 2px 1px black;
 }
 
+/* Formatação do Menu */
+nav {
+	background-color: #2b7a78;
+	font-size: 1.5em;
+	overflow: hidden;
+	position: sticky;
+}
+
+nav a {
+	color: #def2f1;
+	display: block;
+	float: left;
+	padding: 16px 20px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 2px 1px black;
+}
+
+nav a:hover {
+	background-color: #17252a;
+	color: #feffff;
+}
+
+.ativo {
+	background-color: #17252a;
+}
+
 article {
 	color: #17252a;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	padding: 20px;
 	text-align: justify;
 }
@@ -42,37 +81,10 @@ footer a:hover {
 	color: white;
 }
 
-/* Formatação do Menu */
-nav {
-	background-color: #2b7a78;
-	font-size: 1.5em;
-	overflow: hidden;
-	position: sticky;
-	top: 0;
-}
-
-nav a {
-	color: #def2f1;
-	display: block;
-	float: left;
-	padding: 16px 20px;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: 2px 1px black;
-}
-
-nav a:hover {
-	background-color: #17252a;
-	color: #feffff;
-}
-
-.ativo {
-	background-color: #17252a;
-}
-
 /* Formatação Texto */
 h1 {
 	color: #def2f1;
+	font-size: 1.5em;
 	text-align: left;
 	text-shadow: 2px 1px black;
 }
