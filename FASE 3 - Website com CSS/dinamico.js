@@ -60,7 +60,7 @@ function limpaNome() {
 
 function limpaEmail() {
     document.getElementById("erroEmail").innerHTML = null;
-    document.getElementById("").style.boxShadow = "none";
+    document.getElementById("email").style.boxShadow = "none";
 }
 
 function limpaSugestao() {
