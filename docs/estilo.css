@@ -1,246 +1,261 @@
 body {
-	box-sizing: border-box;
-	background-color: #3aafa9;
-	color: #17252a;
-	font-family: "Anton", Impact, sans-serif;
-	font-size: 120%;
-	margin: auto;
-	max-width: 1200px;
+    box-sizing: border-box;
+    background-color: #3aafa9;
+    color: #17252a;
+    font-family: "Anton", Impact, sans-serif;
+    font-size: 120%;
+    margin: auto;
+    max-width: 1200px;
 }
 
 header {
-	background: url(img/robo.svg) right no-repeat, url(img/robo2.svg) left no-repeat;
-	background-size: contain;
-	color: #feffff;
-	font-family: "Righteous", Impact, sans-serif;
-	font-size: 460%;
-	margin: 3% 0%;
-	padding: 0px 30px;
-	text-align: center;
-	text-shadow: 2px 1px black;
+    background: url(img/robo.svg) right no-repeat,
+        url(img/robo2.svg) left no-repeat;
+    background-size: contain;
+    color: #feffff;
+    font-family: "Righteous", Impact, sans-serif;
+    font-size: 460%;
+    margin: 3% 0%;
+    padding: 0px 30px;
+    text-align: center;
+    text-shadow: 2px 1px black;
 }
 
 @media screen and (max-device-width: 600px) {
-	header {
-		font-size: 560%;
-		margin: 1% 0%;
-	}
+    header {
+        font-size: 560%;
+        margin: 1% 0%;
+    }
 }
 
 /* Formatação do Menu */
 nav {
-	background-color: #2b7a78;
-	overflow: hidden;
-	position: sticky;
-	top: 0;
+    background-color: #2b7a78;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
-	display: block;
-	float: left;
-	font-size: 120%;
-	padding: 12px 20px;
-	text-align: center;
+    display: block;
+    float: left;
+    font-size: 120%;
+    padding: 12px 20px;
+    text-align: center;
 }
 
 nav a:hover,
 .ativo {
-	background-color: #17252a;
+    background-color: #17252a;
 }
 
 @media screen and (max-device-width: 600px) {
-	nav a {
-		font-size: 250%;
-		padding: 24px 30px;
-	}
+    nav a {
+        font-size: 250%;
+        padding: 24px 30px;
+    }
 }
 
 article {
-	padding: 20px;
-	text-align: justify;
+    padding: 20px;
+    text-align: justify;
 }
 
 footer {
-	clear: both;
-	color: #def2f1;
-	font-size: 90%;
-	margin: 3% 2% 0% 0%;
-	text-align: right;
-	text-shadow: 2px 1px black;
+    clear: both;
+    color: #def2f1;
+    font-size: 90%;
+    margin: 3% 2% 0% 0%;
+    text-align: right;
+    text-shadow: 2px 1px black;
 }
 
 @media screen and (max-device-width: 600px) {
-	footer {
-		font-size: 70%;
-	}
+    footer {
+        font-size: 70%;
+    }
 }
 
 /* Formatação Texto */
 h1 {
-	color: #def2f1;
-	font-size: 160%;
-	text-align: left;
-	text-shadow: 2px 1px black;
+    color: #def2f1;
+    font-size: 160%;
+    text-align: left;
+    text-shadow: 2px 1px black;
 }
 
 @media screen and (max-device-width: 600px) {
-	h1 {
-		font-size: 200%;
-		text-align: center;
-	}
+    h1 {
+        font-size: 200%;
+        text-align: center;
+    }
 }
 
 a {
-	color: #def2f1;
-	text-decoration: none;
-	text-shadow: 2px 1px black;
+    color: #def2f1;
+    text-decoration: none;
+    text-shadow: 2px 1px black;
 }
 
 a:hover {
-	color: #feffff;
+    color: #feffff;
 }
 
 /* Formatação da Tabela */
 table {
-	width: 50%;
+    width: 50%;
 }
 
 th {
-	background-color: #17252a;
-	border: 1px solid #def2f1;
-	color: #def2f1;
-	padding: 2%;
-	text-align: center;
-	text-shadow: 2px 1px black;
+    background-color: #17252a;
+    border: 1px solid #def2f1;
+    color: #def2f1;
+    padding: 2%;
+    text-align: center;
+    text-shadow: 2px 1px black;
 }
 
 td {
-	border: 1px solid #def2f1;
-	padding: 2%;
-	text-align: left;
+    border: 1px solid #def2f1;
+    padding: 2%;
+    text-align: left;
 }
 
 tr:nth-child(odd) {
-	background-color: #def2f1;
+    background-color: #def2f1;
 }
 
 @media screen and (max-device-width: 600px) {
-	table {
-		width: 80%;
-	}
+    table {
+        width: 80%;
+    }
 
-	th,
-	td {
-		font-size: 190%;
-		padding: 2.5%;
-	}
+    th,
+    td {
+        font-size: 190%;
+        padding: 2.5%;
+    }
 }
 
 /* Formatação do Formulário */
 form {
-	align-items: stretch;
-	display: flex;
-	flex-flow: wrap;
-	flex-direction: column;
-	padding: 0% 15%;
+    align-items: stretch;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    padding: 0% 15%;
 }
 
 label {
-	margin: 2px 12px 2px;
-	vertical-align: middle;
+    margin: 2px 12px 2px;
+    vertical-align: middle;
 }
 
 input,
 select,
 textarea {
-	border: 1px solid transparent;
-	font-size: 80%;
-	margin: 2px 5px 12px;
-	padding: 10px;
-	vertical-align: middle;
+    border: 1px solid transparent;
+    font-size: 80%;
+    margin: 2px 5px 12px;
+    padding: 10px;
+    vertical-align: middle;
 }
 
 select {
-	border: 10px solid transparent;
+    border: 10px solid transparent;
+    margin: 2px 5px 30px;
 }
 
 textarea {
-	height: 200px;
+    height: 200px;
 }
 
 button {
-	background-color: #2b7a78;
-	border: none;
-	color: #def2f1;
-	cursor: pointer;
-	font-family: inherit;
-	font-size: 110%;
-	margin: 2px 5px 12px;
-	padding: 12px 40px;
-	text-shadow: 2px 1px black;
+    background-color: #2b7a78;
+    border: none;
+    color: #def2f1;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 110%;
+    margin: 2px 5px 12px;
+    padding: 12px 40px;
+    text-shadow: 2px 1px black;
 }
 
 button:hover {
-	background-color: #17252a;
+    background-color: #17252a;
+}
+
+/* Formulário com mensagens de erro amigáveis #paratodosverem */
+.erro {
+    color: rgba(225, 0, 0, 0.8);
+    font-size: 80%;
+    margin: 0px 12px 20px;
+    text-shadow: 2px 1px black;
 }
 
 @media screen and (max-device-width: 600px) {
-	form {
-		padding: 0% 2%;
-	}
+    form {
+        padding: 0% 2%;
+    }
 
-	label {
-		font-size: 220%;
-	}
+    label {
+        font-size: 220%;
+    }
 
-	input,
-	select,
-	textarea {
-		font-size: 200%;
-		margin-top: auto;
-		margin-bottom: 30px;
-		padding: 25px;
-	}
+    input,
+    select,
+    textarea {
+        font-size: 200%;
+        margin-top: auto;
+        padding: 25px;
+    }
 
-	select {
-		border: 1px solid transparent;
-	}
+    select {
+        border: 1px solid transparent;
+        margin-bottom: 40px;
+    }
 
-	button {
-		font-size: 250%;
-		margin-top: 30px;
-		padding: 30px 120px;
-	}
+    button {
+        font-size: 250%;
+        margin-top: 30px;
+        padding: 30px 120px;
+    }
 
-	button[type="submit"] {
-		background-color: #17252a;
-	}
+    button[type="submit"] {
+        background-color: #17252a;
+    }
+}
+
+.erro {
+    font-size: 200%;
+    margin: 0px 12px 30px;
 }
 
 /* Formatação das imagens */
 #home {
-	height: 22px;
-	width: 22px;
+    height: 22px;
+    width: 22px;
 }
 
 #mao {
-	height: 20%;
-	width: 20%;
+    height: 20%;
+    width: 20%;
 }
 
 @media screen and (max-device-width: 600px) {
-	img {
-		height: 100%;
-		width: 100%;
-	}
+    img {
+        height: 100%;
+        width: 100%;
+    }
 
-	#home {
-		height: 44px;
-		width: 44px;
-	}
+    #home {
+        height: 44px;
+        width: 44px;
+    }
 
-	#mao {
-		height: 40%;
-		width: 40%;
-	}
+    #mao {
+        height: 40%;
+        width: 40%;
+    }
 }
